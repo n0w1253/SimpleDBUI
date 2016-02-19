@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/northwindnode-dev',
+	db: 'mongodb://localhost/simpledb-dev',
 	app: {
 		title: 'SimpleDBUI - Development Environment'
 	},

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/northwindnode-test',
+	db: 'mongodb://localhost/simpledb-test',
 	port: 3001,
 	app: {
 		title: 'SimpleDBUI - Test Environment'
