@@ -1,16 +1,20 @@
 <section data-ng-controller="CategoriesController" data-ng-init="find()">
     <div class="page-header">
         <h1>Categories</h1>
+
     </div>
-   
-    <form>
+
+    <form class="form-inline">
         <div class="form-group">
             <div class="input-group">
                 <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
                 <input type="text" class="form-control" placeholder="Search ... " ng-model="searchTerm">
-            </div>      
+            </div> 
+
         </div>
+        <a ui-sref="createCategory" class="btn btn-primary pull-right">Add New Category</a>
     </form>
+    <hr>
     <div>
         <table class="table table-bordered table-striped table-hover table-responsive">
             <thead>
@@ -34,7 +38,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="category in categories | orderBy:sortType:sortReverse | filter:searchTerm">
+                <tr ng-repeat="category in categories| orderBy:sortType:sortReverse | filter:searchTerm">
                     <td>{{ category.name}}</td>
                     <td>{{ category.description}}</td>
                     <td>
